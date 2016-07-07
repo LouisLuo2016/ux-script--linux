@@ -1,0 +1,10 @@
+Liux下配置方法：
+1,执行install.sh安装脚本，安装python和相关库
+2,配置sdk环境变量
+  vi ~/bash.rc
+  加入以下环境变量：
+  export ANDROID_HOME="/home/louis/sdk"
+  export PATH=$ANDROID_HOME/platform-tools:$PATH
+3,修改fastboot权限
+  sudo chown root:root fastboot
+  sudo chmod +s fastboot
